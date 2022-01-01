@@ -25,8 +25,18 @@
                 @csrf
                   <input  class="btn btn-success" type="submit" value="Participate">
 
+
+                
+
                 </form>
-               
+              
+                  
+  
+    
+
+
+
+
               </div>
             </div>
           </div>
@@ -40,3 +50,9 @@
         </div>
       </div>
     </div>
+
+    
+    <div>
+                      @comments(['model' => $product])
+      
+                   </div>

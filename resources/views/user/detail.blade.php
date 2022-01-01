@@ -63,14 +63,14 @@ https://templatemo.com/tm-546-sixteen-clothing
                 <a class="nav-link" href="contact.html">Contact Us</a>
               </li>
 
-             
+            
 
                     <x-app-layout>
 
 </x-app-layout>
 
-                   
-            
+                  
+             </li>
             </ul>
           </div>
         </div>
@@ -99,7 +99,33 @@ https://templatemo.com/tm-546-sixteen-clothing
     </header>
 
 
-    
+
+
+    <div class="col-md-4">
+  <div class="product-item">
+    <a href="#"><img height="300" width="150" src="/certifimage/{{$data->image}}" alt=""></a>
+    <div class="down-content">
+      <a href="#"><h4>{{$data->title}}</h4></a>
+      <h6>{{$data->domain}}</h6>
+      <p>{{$data->description}}</p>
+     
+      <form action="{{url('participate',$data->id)}}"
+       method="POST">
+
+      @csrf
+        <input  class="btn btn-success" type="submit" value="Participate">
+
+      </form>
+
+
+      <div>
+      @comments(['model' => $data])
+      
+      </div>
+     
+    </div>
+  </div>
+</div>
 
 
     <!-- Bootstrap core JavaScript -->

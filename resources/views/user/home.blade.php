@@ -144,6 +144,7 @@ https://templatemo.com/tm-546-sixteen-clothing
 
     @include('user.product')
 
+
     <div class="best-features">
       <div class="container">
         <div class="row">

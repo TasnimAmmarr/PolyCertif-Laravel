@@ -113,25 +113,11 @@ class HomeController extends Controller
         }
 
 
-
-
-
-        
-        public function details($id)
-        {
-            $data=product::find($id);
-            return view('user.details',compact('data'));
-        }
-
-
-
-
-
 /****************detail*************** */
 public function detail($id)
 {
     $data=product::find($id);
-    return view('detail',compact('data'));
+    return view('user.detail',compact('data'));
     
 }
 
@@ -141,6 +127,6 @@ public function detail($id)
   public function test()
 {
    
-    return view('test');
+    return view('user.test');
 }
 }
