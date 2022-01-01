@@ -17,8 +17,16 @@
                 <a href="#"><h4>{{$product->title}}</h4></a>
                 <h6>{{$product->domain}}</h6>
                 <p>{{$product->description}}</p>
-             
-                
+                <a class="btn btn-primary" href="
+                        {{url('detail',$product->id)}}">Read More</a>
+                <form action="{{url('participate',$product->id)}}"
+                 method="POST">
+
+                @csrf
+                  <input  class="btn btn-success" type="submit" value="Participate">
+
+                </form>
+               
               </div>
             </div>
           </div>

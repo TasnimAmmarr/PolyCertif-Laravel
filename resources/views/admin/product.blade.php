@@ -30,22 +30,23 @@
 
  <div class="container-fluid page-body-wrapper">
      <div class="container" align="center">
-
-     <h1 class="title"> Add certificate</h1>
-
      @if(session()->has('message'))
 
-     <div class="alert alert-success">
+<div class="alert alert-success">
 
-     {{session()->get('message')}}
+{{session()->get('message')}}
+
+<button type="button" class="close" data-dismiss="alert">x
+    
+</button>
+
+</div>
+
+@endif
      
-     <button type="button" class="close" data-dismiss="alert">x
-         
-     </button>
+    
 
-     </div>
-
-     @endif
+     <h1 class="title"> Add certificate</h1>
 
 
         <form action="{{url('uploadcertif')}}" method="post" 
@@ -86,8 +87,10 @@
         <input class="btn btn-success" type="submit">
     </div>
 </form>
+
 </div>
 </div>
+
           <!-- partial --> 
      @include('admin.scripte')
   </body>

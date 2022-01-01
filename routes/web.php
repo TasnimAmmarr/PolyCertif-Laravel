@@ -36,3 +36,16 @@ Route::get('/updateview/{id}',[AdminController::class,'updateview']);
 
 Route::post('/updateproduct/{id}',[AdminController::class,'updateproduct']);
 
+Route::get('/search',[HomeController::class,'search']);
+
+Route::post('/participate/{id}',[HomeController::class,'participate']);
+
+Route::get('/showcart',[HomeController::class,'showcart']);
+
+Route::get('/delete/{id}',[HomeController::class,'deletecart']);
+
+//Route::post('/details/{id}',[HomeController::class,'details']);
+
+Route::get('/detail/{id}',[HomeController::class,'detail']);
+
+Route::get('/test',[HomeController::class,'test']);
