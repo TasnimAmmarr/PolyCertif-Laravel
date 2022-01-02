@@ -11,6 +11,7 @@ use App\Models\User;
 use App\Models\Product;
 
 use App\Models\Cart;
+use App\Models\like;
 
 
 class HomeController extends Controller
@@ -129,4 +130,45 @@ public function detail($id)
    
     return view('user.test');
 }
+/****************like*********** */
+
+public function like(Request $request ,$id)
+{
+    if(Auth::id())
+    {
+
+        $user=auth()->user();
+
+        $product=product::find($id);
+
+        $like=new like;
+        $like->user_id=$user->user_id;
+        $like->post_id=$user->post_id;
+        $like->like=$user->like;
+  
+        $like->save();
+        
+
+        return redirect()->back()->with('message','You like this post');
+
+    }
+    else
+    {
+        return redirect('login');
+    }
+
+}
+
+////**************************show like */
+public function showlike()
+{
+
+    $user=auth()->user();
+    $like=like::where('like',$user->like)->get();
+    $count=like::where('like',$user->like)->count();
+
+
+    return view('user.product',compact('count','like'));
+}
+
 }

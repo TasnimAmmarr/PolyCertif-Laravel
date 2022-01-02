@@ -49,3 +49,7 @@ Route::get('/delete/{id}',[HomeController::class,'deletecart']);
 Route::get('/detail/{id}',[HomeController::class,'detail']);
 
 Route::get('/test',[HomeController::class,'test']);
+
+Route::post('/like/{id}',[HomeController::class,'like']);
+
+Route::get('/showlike',[HomeController::class,'showlike']);

@@ -24,6 +24,7 @@ https://templatemo.com/tm-546-sixteen-clothing
     <link rel="stylesheet" href="assets/css/templatemo-sixteen.css">
     <link rel="stylesheet" href="assets/css/owl.css">
 
+
   </head>
 
   <body>
@@ -39,10 +40,18 @@ https://templatemo.com/tm-546-sixteen-clothing
     <!-- ***** Preloader End ***** -->
 
     <!-- Header -->
+
     <header class="">
+
       <nav class="navbar navbar-expand-lg">
+        
         <div class="container">
+        <div class="row">
+          <div class="col-2 .col-md-2" align="center">
+          <a href="#"><img height="60" width="50" src="/certifimage/polylogo.png" alt=""></a>
+             </div> </div>
           <a class="navbar-brand" href="index.html"><h2>Poly <em>Certif</em></h2></a>
+
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
@@ -54,14 +63,10 @@ https://templatemo.com/tm-546-sixteen-clothing
                 </a>
               </li> 
               <li class="nav-item">
-                <a class="nav-link" href="products.html">Our Products</a>
+                <a class="nav-link" href="/">
+                Categories </a>
               </li>
-              <li class="nav-item">
-                <a class="nav-link" href="about.html">About Us</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="contact.html">Contact Us</a>
-              </li>
+            
 
               <li class="nav-item">
               @if (Route::has('login'))
@@ -120,24 +125,21 @@ https://templatemo.com/tm-546-sixteen-clothing
     <!-- Banner Starts Here -->
     <div class="banner header-text">
       <div class="owl-banner owl-carousel">
+      <div class="banner-item-02">
+          <div class="text-content">
+           
+            <h4>Polytechnique Sousse</h4>
+            <h2>Le succès commence par un bon choix</h2>
+          </div>
+        </div>
         <div class="banner-item-01">
           <div class="text-content">   
-            <h4>Best Offer</h4>
-            <h2>New Arrivals On Sale</h2>
+            <h4> Certifications</h4>
+            <h2>Ecole Polytechnique Sousse</h2>
           </div>
         </div>
-        <div class="banner-item-02">
-          <div class="text-content">
-            <h4>Flash Deals</h4>
-            <h2>Get your best products</h2>
-          </div>
-        </div>
-        <div class="banner-item-03">
-          <div class="text-content">
-            <h4>Last Minute</h4>
-            <h2>Grab last minute deals</h2>
-          </div>
-        </div>
+        
+        
       </div>
     </div>
     <!-- Banner Ends Here -->
@@ -150,26 +152,30 @@ https://templatemo.com/tm-546-sixteen-clothing
         <div class="row">
           <div class="col-md-12">
             <div class="section-heading">
-              <h2>About Sixteen Clothing</h2>
+              <h2>
+Bienvenue à l'école Polytechnique de Sousse</h2>
             </div>
           </div>
           <div class="col-md-6">
             <div class="left-content">
-              <h4>Looking for the best products?</h4>
-              <p><a rel="nofollow" href="https://templatemo.com/tm-546-sixteen-clothing" target="_parent">This template</a> is free to use for your business websites. However, you have no permission to redistribute the downloadable ZIP file on any template collection website. <a rel="nofollow" href="https://templatemo.com/contact">Contact us</a> for more info.</p>
+              <h4>Le succès commence par un bon choix</h4>
+              <p><a rel="nofollow" href="https://templatemo.com/tm-546-sixteen-clothing" target="_parent"></a> 
+Bienvenue à l'école Polytechnique de Sousse
+Fondée en 2009, L’Ecole Polytechnique de Sousse est une grande école privée d’enseignement et de recherche à vocation internationale, accréditée EUR- ACE et qui a pour unique vocation de former des ingénieurs ayant un niveau technique et scientifique conforme  aux meilleurs  standards internationaux. Elle se fixe résolument comme mission de garantir une excellente insertion professionnelle à ses jeunes diplômés en les propulsant directement  à l’employabilité.</p>
               <ul class="featured-list">
-                <li><a href="#">Lorem ipsum dolor sit amet</a></li>
-                <li><a href="#">Consectetur an adipisicing elit</a></li>
-                <li><a href="#">It aquecorporis nulla aspernatur</a></li>
-                <li><a href="#">Corporis, omnis doloremque</a></li>
-                <li><a href="#">Non cum id reprehenderit</a></li>
+                <li><a href="#">Accréditation</a></li>
+                <li><a href="#">Notre Nouveau Campus
+</a></li>
+              
+                <li><a href="#">Nos Événement</a></li>
+            
               </ul>
-              <a href="about.html" class="filled-button">Read More</a>
+              <a href="#" class="filled-button">Read More</a>
             </div>
           </div>
           <div class="col-md-6">
             <div class="right-image">
-              <img src="assets/images/feature-image.jpg" alt="">
+              <img src="assets/images/poly.jpg" alt="">
             </div>
           </div>
         </div>
@@ -183,12 +189,12 @@ https://templatemo.com/tm-546-sixteen-clothing
           <div class="col-md-12">
             <div class="inner-content">
               <div class="row">
-                <div class="col-md-8">
-                  <h4>Creative &amp; Unique <em>Sixteen</em> Products</h4>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque corporis amet elite author nulla.</p>
-                </div>
-                <div class="col-md-4">
-                  <a href="#" class="filled-button">Purchase Now</a>
+                <div class="col-md--12">
+                  </div>
+                <div class="col-md-12" align="center">
+                <a href="#"><img height="400" width="300" src="/certifimage/polylogo.png" alt=""></a>
+<br>
+                  <a href="https://www.polytecsousse.tn/" class="filled-button" >PolyTech</a>
                 </div>
               </div>
             </div>
@@ -203,9 +209,8 @@ https://templatemo.com/tm-546-sixteen-clothing
         <div class="row">
           <div class="col-md-12">
             <div class="inner-content">
-              <p>Copyright &copy; 2020 Sixteen Clothing Co., Ltd.
+             
             
-            - Design: <a rel="nofollow noopener" href="https://templatemo.com" target="_blank">TemplateMo</a></p>
             </div>
           </div>
         </div>

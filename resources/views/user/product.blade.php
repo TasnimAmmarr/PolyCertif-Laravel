@@ -3,8 +3,8 @@
         <div class="row">
           <div class="col-md-12">
             <div class="section-heading">
-              <h2>Latest Products</h2>
-              <a href="products.html">view all products <i class="fa fa-angle-right"></i></a>
+              <h2>Our Certificates</h2>
+              <a href="/">view all certificates <i class="fa fa-angle-right"></i></a>
             </div>
           </div>
           
@@ -23,20 +23,25 @@
                  method="POST">
 
                 @csrf
-                  <input  class="btn btn-success" type="submit" value="Participate">
+                  <input  class="btn btn-secondary" type="submit" value="Participate">
 
 
                 
+                  <button type="button" class="btn btn-success">Like
+                  <span class="glyphicon glyphicon-thumbs-up">
+                  </span> <b>10</b>
+                  <a href=" href={{url('home')}}"></a>
+                </button>
 
+                <button type="button" class="btn btn-danger">Dislike
+                
+                <span class="glyphicon glyphicon-thumbs-down">
+                </span> <b>2</b>
+                </button>
+                
                 </form>
-              
-                  
-  
-    
-
-
-
-
+               
+                
               </div>
             </div>
           </div>
@@ -48,11 +53,17 @@
 
         </div>
         </div>
-      </div>
-    </div>
-
-    
+      <br><br><br>
+    <div class="col-md-12">
+            <div class="section-heading">
+              <h2>Our Certificates</h2>
+              <a href="products.html"> <i class="fa fa-angle-right"></i></a>
+            </div>
+          </div>
     <div>
                       @comments(['model' => $product])
       
                    </div>
+
+                   </div>
+    </div>
