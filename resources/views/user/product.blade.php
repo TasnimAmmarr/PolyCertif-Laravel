@@ -5,6 +5,14 @@
             <div class="section-heading">
               <h2>Our Certificates</h2>
               <a href="/">view all certificates <i class="fa fa-angle-right"></i></a>
+           
+             <form action="{{url('/search')}}" method="get"
+             class="form-inline" style="float: right"; padding="10px";>
+               <input class="form-control" type="search" name="search"
+                placeholder="search">
+                <input type="submit" value="Search" class="btn btn-success">
+             </form>
+           
             </div>
           </div>
           
@@ -46,12 +54,16 @@
             </div>
           </div>
         @endforeach
+
+        @if(method_exists($data,'link'))
          
         <div class="d-flex justify-content-center">
 
         {!! $data->links() !!}
 
         </div>
+
+        @endif
         </div>
       <br><br><br>
     <div class="col-md-12">
